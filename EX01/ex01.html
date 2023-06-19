@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome</title>
+</head>
+<body>
+    <h1>Programa Olá Você!</h1>
+    <p> Nome:  <input type="text" id="nome">
+    <input type="button" value="Mostrar" id="mostrar">
+    </p>
+    <p id="resposta"></p>
+
+    <script>
+        function mostrarOla() {
+
+        // obtém o conteúdo do campo (com id=) nome
+        var nome = document.getElementById("nome").value;
+        
+        // exibe no parágrafo (resposta): "Olá " e o nome informado
+        document.getElementById("resposta").innerHTML = "Olá " +
+        nome;
+        }
+        
+        // cria uma referência ao botão (com id=) mostrar
+        var mostrar = document.getElementById("mostrar");
+        
+        /*Registra para o botão "mostrar" um ouvinte para o evento click, 
+        que ao ser clicado irá chamar a função mostrarOla*/ 
+        mostrar.onclick = mostrarOla;
+        
+     </script>
+</body>
+</html>
