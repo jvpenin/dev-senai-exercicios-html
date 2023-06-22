@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+
+    <style>
+        h3{
+            font-weight: normal;
+        }
+        #formulario{ 
+            padding: 10px;
+            width: 300px;
+            height: 120px;
+            border: black;
+            border: 1px solid;
+        }
+
+        #outResultado {
+            padding-top:  10px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>IMC - Índice de Massa Corporal</h1>
+    <h3>Fórmula: IMC =  
+        <math>
+            <mfrac>
+                <mn>Peso(kg)</mn>
+                <msup>
+                  <mi>Altura(m)</mi>
+                  <mn>2</mn>
+                </msup>
+              </mfrac>
+        </math> 
+    </h3>
+
+    <form id="formulario">
+        <p>
+            Altura: 
+            <input type="number" id="inAltura">
+        </p>
+        <p>
+            Peso:
+            <input type="number" id="inPeso">
+        </p>
+        <p>
+            <input type="button" value="Calcular" id="btnCalcular">
+            <input type="reset" value="Limpar">
+        </p>
+        <p id="outResultado"></p>
+    </form>
+
+    <script src="ex08.js"></script>
+</body>
+</html>
