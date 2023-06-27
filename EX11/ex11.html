@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspeito - Teste</title>
+</head>
+<body>
+    <p id="outNome"></p> <!--Instruções-->
+
+    <form id="formulario">
+        <p>
+            Você telefonou para a vítima? <br>
+            <input type="radio" name="question1" value="true"> Sim<br>
+            <input type="radio" name="question1" value="false"> Não<br>
+        </p>
+        <p>
+            Você esteve no local do crime? <br>
+            <input type="radio" name="question2" value="true"> Sim<br>
+            <input type="radio" name="question2" value="false"> Não<br>
+        </p>
+        <p>
+            Você mora perto da vítima?<br>
+            <input type="radio" name="question3" value="true"> Sim<br>
+            <input type="radio" name="question3" value="false"> Não<br>
+        </p>
+        <p>
+            Você devia para a vítima? <br>
+            <input type="radio" name="question4" value="true"> Sim<br>
+            <input type="radio" name="question4" value="false"> Não<br>
+        </p>
+        <p>
+            Você já trabalhou com a vítima? <br>
+            <input type="radio" name="question5" value="true"> Sim<br>
+            <input type="radio" name="question5" value="false"> Não<br>
+        </p>
+        <button type="button" onclick="analisarRespostas()">Verificar</button>
+        <button type="reset">Limpar</button>
+
+        <p id="outRes" style="color:red;"></p>
+    </form>
+
+    <script src="ex11.js"></script>
+</body>
+</html>
